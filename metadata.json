@@ -1,0 +1,6 @@
+{
+  "name": "Cafe By Cassette",
+  "description": "Retro-themed cafe in Kattupakkam, Chennai featuring artisan coffee, Italian cuisine, nostalgic music aesthetics, and online ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

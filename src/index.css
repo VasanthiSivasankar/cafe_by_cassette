@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  --color-cream-50: #FAF7F2;
+  --color-cream-100: #F4EFE6;
+  --color-cream-200: #EADBCA;
+  --color-espresso-900: #241A15;
+  --color-espresso-800: #382920;
+  --color-espresso-700: #4D392D;
+  --color-terracotta-500: #D9653B;
+  --color-terracotta-600: #C2532A;
+  --color-amber-gold: #E5A93C;
+  --color-vintage-burgundy: #7C2D37;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #241A15;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Subtle retro cassette tape reel spin animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-slow 18s linear infinite reverse;
+}
+
+/* Focus visibility for accessibility */
+*:focus-visible {
+  outline: 2px solid #D9653B;
+  outline-offset: 2px;
+}
